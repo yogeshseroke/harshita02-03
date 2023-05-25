@@ -157,6 +157,38 @@ public class IfElseExample {
 //		}
 		
 		//num divible by 3,5,7
+//		int num = 21;
+//		if(num%3==0) {
+//			if(num%5==0) { 
+//				if(num%7==0) {
+//					System.out.println("divisible by all 3,5,7");
+//				}else {
+//					System.out.println("divisible by 3 and 5");
+//				}
+//			}else {
+//				if(num%7==0) {
+//					System.out.println("divisible by 3 and 7");
+//				}else {
+//					System.out.println("divisible by only 3");
+//				}	
+//			}
+//		}else {
+//			if(num%5==0) {
+//				if(num%7==0) {
+//					System.out.println("divisible by both 5 and 7");
+//				}else {
+//					System.out.println("divisible by only 5");
+//				}
+//			}else {
+//				if(num%7==0) {
+//					System.out.println("divisible by only 7");
+//				}else {
+//					System.out.println("not divisible by 3,5,7");
+//				}
+//			}
+//		}
+		
+		
 	}
 
 }
