@@ -100,32 +100,26 @@ public class OperatorExample {
 //			System.out.println("a!=b");
 //		}
 
-	//           ==     and     equals()
-		
-	/*
-	 *        String => predefine class
-	 *        		 => set of characters eg:- "abc xyz"
-	 *        		 => index of string is start from 0 eg:- "abc"
-	 *        											      012
-	 *        
-	 *               => we can define string as two different types...
-	 *                  (1) String as a reference.
-	 *                  	
-	 *                      	String s = "xyz";
-	 *                          it will store under string pool memory.
-	 *                       
-	 *                  (2) String as an object.
-	 *                          String s = new String("xyz");
-	 *	 *                      it will store under string heap memory. 
-	 * 				 => pool vs heap
-	 * 				    
-	 * 
-	 * 			(== operator) :- address comparison
-	 * 
-	 *  		(equals() method) :- value comparison
-	 * 
-	 * */	
-		
+		// == and equals()
+
+		/*
+		 * String => predefine class => set of characters eg:- "abc xyz" => index of
+		 * string is start from 0 eg:- "abc" 012
+		 * 
+		 * => we can define string as two different types... (1) String as a reference.
+		 * 
+		 * String s = "xyz"; it will store under string pool memory.
+		 * 
+		 * (2) String as an object. String s = new String("xyz"); * it will store under
+		 * string heap memory. => pool vs heap
+		 * 
+		 * 
+		 * (== operator) :- address comparison
+		 * 
+		 * (equals() method) :- value comparison
+		 * 
+		 */
+
 //		String s = "hello";
 //		String s1 = "hello";
 //		
@@ -158,9 +152,88 @@ public class OperatorExample {
 //		}else {
 //			System.out.println("not equal");
 //		}
+
+//===============================================================
+
+		// logical operators.... &&, ||, !
+
+		/*
+		 * and => && (both conditions must be true) or => || (at least one condition
+		 * must be true) not => ! (it is true opposite of true)
+		 * 
+		 * 
+		 */
+
+//		int num = 4;
+//		
+//		if(num>1 && num>2 && num>3) {
+//			
+//			System.out.println("num > 1,2,3");
+//		}else {
+//			System.out.println("num <= 1,2,3");
+//		}
+
+//		int num = 10;
+//
+//		if (num > 1 || num < 20 || num > 30) {
+//
+//			System.out.println("if statement");
+//		} else {
+//			System.out.println("else statement");
+//		}
+
+//		int num = 2;
+//
+//		if (num != 1) {
+//
+//			System.out.println("num not equal to 1");
+//		} else {
+//			System.out.println("num is equal to 1");
+//		}
+		
+		//====================================
+		//simple assignment.... int a = 10; b = a
+		//complex assignment or shorthand operator
+		/*
+		 *       int a = 10;
+		 *       a += 10; => a = a + 10
+		 *       a -= 1;  => a = a - 1
+		 *       a *= 15; => a = a * 15
+		 *       a /= 1;  => a = a / 1
+		 *       a %= 1;  => a = a % 1
+		 * 
+		 * 
+		 * */
+//	      			int a = 10;
+//			        a += 10; //=> a = a + 10   (20)
+//			        System.out.println(a);
+//			        
+//			        a -= 1;  //=> a = a - 1    (19)
+//			        System.out.println(a);
+//			        
+//			        a *= 15; //=> a = a * 15   (19*15=285)
+//			        System.out.println(a);
+//			        
+//			        a /= 1;  //=> a = a / 1    (285/1=285)
+//			        System.out.println(a);
+//			        
+//			        a %= 1;  //=> a = a % 1    (285%1=0)
+//			        
+//			        System.out.println(a);
 		
 		
-	
+		//========================================================
+		
+		// Ternary Operator:-   three oprand
+		
+		/*
+		 *    Syntax :-          (condition) ? true : false;
+		 * 				String s = (10 > 9) ? "true" : "false";
+		 * 
+		 * */
+		
+//			 String s = (10 > 9) ? "true" : "flase";
+//			 System.out.println(s);
 	}
 
 }
