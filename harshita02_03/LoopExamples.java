@@ -269,12 +269,25 @@ public class LoopExamples {
 		 *     1 2
 		 *     1
 		 *
-		 *		*
-		 *      # *
-		 *      * # *
-		 *      # * # *
-		 *      * # * # *
-		 *      
+		 *	i=1		*
+		 *  i=2     # *
+		 *  i=3    	* # *
+		 *  i=4    	# * # *
+		 *  i=5    	* # * # *
+		 *   		j j j j j
+		 *   		1 2 3 4 5
+		 *   i,j => (i+j)%2==0  , even = *, odd = # 
+		 *   1,1 => (1+1)
+		 *   2,2 => (2+2)
+		 *   3,1 => (3+1)
+		 *   3,3
+		 *   4,2
+		 *   4,4
+		 *   5,1
+		 *   5,3
+		 *   5,5   
+		 *==============================      
+		 *
 		 *     	*
 		 *     * *
 		 *    * * *
@@ -291,7 +304,123 @@ public class LoopExamples {
 		 *      # *
 		 *      *
 		 *      
+		 *      
+		 *      * * * * i=0
+		 *      *     * i=1
+		 *      *     * i=2
+		 *      * * * * i=3
+		 *      
+		 *      j j j j 
+		 *      0 1 2 3 
+		 *      
+		 *      (i==2 || i==3 || i==4 || j==1 || j==5) => *
 		 * */
+		
+//		for(int i=1; i<=5; i++) {
+//			for(int j=1; j<=i; j++) {
+//				if((i+j)%2==0) {
+//					System.out.print("* ");
+//				}else {
+//					System.out.print("# ");
+//				}
+//			}
+//			System.out.println();
+//		}
+		
+		//=========================================
+		
+//		int r=4;
+//		int c=4;
+//		for(int i=0; i<r; i++) {
+//			for(int j=0; j<c; j++) {
+//				if(i==0 || i==r-1 || j==0 || j==c-1) {
+//					System.out.print("*");
+//				}else {
+//					System.out.print(" ");
+//				}
+//			}
+//			System.out.println();
+//		}
+		//===========================================
+		
+/*
+ * 			0 1 2 3
+ *			j j j j
+ *
+		       *    i=0
+		      * *   i=1
+		     * * *  i=2
+		    * * * * i=3
+		    k k k k 
+		    0 1 2 3 
+		     
+		     
+		     * * * i=2
+		      * *  i=1
+		       *   i=0
+		     
+		     
+*/
+		
+//		for(int i=0; i<4; i++) {
+//			for(int k=0; k<=5-i; k++) {
+//				System.out.print(" ");
+//			}
+//			for(int j=0; j<=i; j++) {
+//				System.out.print("* ");
+//			}
+//			System.out.println();
+//		}
+//		
+//		for(int i=4; i>=0; i--) {
+//			for(int k=0; k<=5-i; k++) {
+//				System.out.print(" ");
+//			}
+//			for(int j=0; j<=i; j++) {
+//				System.out.print("* ");
+//			}
+//			System.out.println();
+//		}
+	
+		/*
+		 *       a
+		 *       a b
+		 *       a b c
+		 *       a b c d
+		 * 
+		 *       A
+		 *       A B
+		 *       A B C
+		 *       A B C D
+		 *       
+		 *       A
+		 *       a b
+		 *       A B C
+		 *       a b c d
+		 *       
+		 *       a
+		 *       A B
+		 *       a b c
+		 *       A B C D
+		 *       
+		 * */
+		//a to z => ascii code a=97 
+		//A to Z => ascii code A=65
+		for(char i='a'; i<='d'; i++) {
+			for(char j='a'; j<=i; j++) {
+				System.out.print(j+" ");
+			}
+			System.out.println();
+		}
+		
+		//===================
+		for(int i=97; i<=100; i++) {
+			for(int j=97; j<=i; j++) {
+				System.out.print((char)j+" ");
+			}
+			System.out.println();
+		}
+		
 		
 	}
 
