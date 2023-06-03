@@ -1,5 +1,7 @@
 package harshita02_03;
 
+import java.beans.Statement;
+
 public class LoopExamples {
 
 	public static void main(String[] args) {
@@ -406,22 +408,115 @@ public class LoopExamples {
 		 * */
 		//a to z => ascii code a=97 
 		//A to Z => ascii code A=65
-		for(char i='a'; i<='d'; i++) {
-			for(char j='a'; j<=i; j++) {
-				System.out.print(j+" ");
-			}
-			System.out.println();
-		}
+//		for(char i='a'; i<='d'; i++) {
+//			for(char j='a'; j<=i; j++) {
+//				System.out.print(j+" ");
+//			}
+//			System.out.println();
+//		}
 		
 		//===================
-		for(int i=97; i<=100; i++) {
-			for(int j=97; j<=i; j++) {
-				System.out.print((char)j+" ");
-			}
-			System.out.println();
-		}
+//		for(int i=97; i<=100; i++) {
+//			for(int j=97; j<=i; j++) {
+//				System.out.print((char)j+" ");
+//			}
+//			System.out.println();
+//		}
+		
+		//=================================================
+		
+		//while loop....
+		
+		//forward
+		
+//		int i=0;//initialization....
+//		
+//		while(i<=10) {//condition
+//			System.out.println(i);//statement
+//			i++;//increment
+//		}
+		
+//		int i=10;//initialization....
+//		
+//		while(i>=0) {//condition
+//			System.out.println(i);//statement
+//			i--;//increment
+//		}
+		
+		//prime...
+		
+//		int num = 70;
+//		int i=1;
+//		int count=0;
+//		while(i<=num) {
+//			if(num%i==0) {
+//				count ++;
+//			}
+//			i++;
+//		}
+//		
+//		if(count==2) {
+//			System.out.println("prime");
+//		}else {
+//			System.out.println("not prime");
+//		}
 		
 		
+		//armstrong number...
+		
+//		int num = 153, r=0;
+//		int temp=num;
+//		int arm=0;
+//		while(num!=0) {
+//			r = num%10;
+//			num= num/10;
+//			
+//			arm = arm + (r*r*r);
+//			
+//		}
+//		
+//		if(arm == temp) {
+//			System.out.println("armstrong number");
+//		}else {
+//			System.out.println("not an armstrong number...");
+//		}
+		
+		//patterns using while loop .....
+		
+		/*
+		 *     * * * *
+		 *     * * * *
+		 *     * * * *
+		 *     * * * *
+		 * */
+		//outer while loop...
+//		int i=0;
+//	
+//		while(i<4)
+//		{
+//			//statement....
+//			//inner while loop
+//			int j=0;
+//			
+//			while(j<4) {
+//				System.out.print("* ");
+//				j++;
+//			}
+//			
+//			i++;
+//			System.out.println();
+//		}
+		
+		//==================================================
+		
+		//do-while...
+		
+//		int i=1; //initialization...
+//		
+//		do {
+//			System.out.println(i);//statement...
+//			i++;//increment...
+//		}while(i>=5);
 	}
 
 }
