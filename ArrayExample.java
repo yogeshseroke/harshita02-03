@@ -142,6 +142,144 @@ public class ArrayExample {
 //			System.out.print(ar[i]+" ");
 //		}
 		
+		//maximum... , smallest... , maximum and smallest...
+		
+//		int ar[] = {4,90,3,82,76,48,570};
+//		
+//		int max = 0;
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			if(max < ar[i]) {
+//				max = ar[i];
+//			}
+//			System.out.print(ar[i]+" ");
+//		}
+//		System.out.println("maximum number = "+max);
+		
+		
+//		int ar[] = {4,-9,0,3,82,76,48,570};
+//		
+//		int min = ar[0];
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			if(min > ar[i]) {
+//				min = ar[i];
+//			}
+//			System.out.print(ar[i]+" ");
+//		}
+//		System.out.println("minimum number = "+min);
+		
+		
+//		int ar[] = {4,9,0,3,820,76,48,570};
+//		
+//		int max = ar[0];
+//		int min = ar[0];
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			if(max < ar[i]) {
+//				max = ar[i];
+//			}else if(min > ar[i]) {
+//				min = ar[i];
+//			}
+//			System.out.print(ar[i]+" ");
+//		}
+//		System.out.println("maximum number = "+max+" minimum number = "+min);
+		
+		
+//		int ar[] = {4,90,90,3,82,76,48,5,70};
+//		
+//		int max = 0;
+//		int secMax = 0;
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			if(max < ar[i]) {
+//				secMax = max;
+//				max = ar[i];
+//			}else if((secMax < ar[i]) && (ar[i] != max)) {
+//				secMax = ar[i];
+//			}
+//			System.out.print(ar[i]+" ");
+//		}
+//		System.out.println("maximum number = "+max+" second maximum = "+secMax);
+		
+		//merge two array...
+		
+//		int a[] = {1,2,3,4};//4
+//		int b[] = {5,6,7,8};//4
+//		//int c[] = {1,2,3,4,5,6,7,8}
+//		
+//		int c[] = new int[a.length + b.length];//length of c = 8
+//		
+//		for(int i=0; i<=a.length-1; i++) {
+//			c[i] = a[i];    //1,2,3,4,0,0,0,0
+//		}
+//		
+//		for(int i=0; i<=c.length-1; i++) {
+//			System.out.print(c[i]);
+//		}
+//		
+//		for(int i=0; i<=b.length-1; i++) {
+//			c[a.length+i] = b[i];//c[4+0]=b[0], //c[{1,2,3,4} + {5,6,7,8}]
+//		}
+//		
+//		for(int i=0; i<=c.length-1; i++) {
+//			System.out.print(c[i]);
+//		}
+		
+		//addition... a[]={1,2,3}, b[]={4,5,6}, c={5,7,9}
+		
+//		int a[]= {1,2,3};//3
+//		int b[]= {4,5,6};//3
+//		int c[]=new int[3];
+//		
+//		for(int i=0; i<=c.length-1; i++) {
+//			c[i] = a[i] + b[i];
+//		}
+//		
+//		for(int i=0; i<=c.length-1; i++) {
+//			System.out.print(c[i]+" ");
+//		}
+		
+		//prime, armStrong-number, even-odd 
+		
+		
+		
+		//======================================================================
+		
+		//multidimentional...=> matrix (row = column)
+		
+		//int [][] ar = new int[row][column];
+		
+
+		/*
+		 * 
+		 *        |1|2| i=0
+		 *        |3|4| i=1
+		 *         j j
+		 *         0 1
+		 * 
+		 * 		ar[0][0] = 1
+		 * 		ar[0][1] = 2
+		 * 		ar[1][0] = 3
+		 * 		ar[1][1] = 4		
+		 * 
+		 * */
+		
+		int ar[][] = new int[2][2];		
+		ar[0][0] = 1;
+		ar[0][1] = 2;
+		ar[1][0] = 3;
+		ar[1][1] = 4;
+		
+		for(int i=0; i<=ar.length-1; i++) {
+			for(int j=0; j<=ar.length-1; j++) {
+				System.out.print(ar[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
+		//ascending, descending, max, min, secMax, prime, armStrong-number, even-odd
+		//merge two array, add two array
 		
 	}
 
