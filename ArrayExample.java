@@ -1,5 +1,7 @@
 package harshita02_03;
 
+import java.util.Scanner;
+
 public class ArrayExample {
 
 	public static void main(String[] args) {
@@ -265,21 +267,113 @@ public class ArrayExample {
 		 * 
 		 * */
 		
-		int ar[][] = new int[2][2];		
-		ar[0][0] = 1;
-		ar[0][1] = 2;
-		ar[1][0] = 3;
-		ar[1][1] = 4;
+//		int ar[][] = new int[2][2];		
+//		ar[0][0] = 1;
+//		ar[0][1] = 2;
+//		ar[1][0] = 3;
+//		ar[1][1] = 4;
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			for(int j=0; j<=ar.length-1; j++) {
+//				System.out.print(ar[i][j]+" ");
+//			}
+//			System.out.println();
+//		}
+		
+		//ascending, descending, max, min, secMax, prime, armStrong-number, even-odd
+		//merge two array, add two array
+		
+		
+		//			  (1)   (2)
+		//           ar[0]  ar[1]
+		//array1={2,4}
+		//array2={5,1}
+		
+//		int ar[][]= {{2,4},{5,1}};
+//		
+//		int temp;
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			for(int j=0; j<=ar.length-1; j++) {
+//				System.out.print(ar[i][j]+" ");
+//			}
+//			System.out.println();
+//		}
+//		
+//		
+//		for(int i=0; i<ar.length; i++) {/*outer loop ki length*/
+//			for(int j=0; j<ar[i].length-1; j++) {/* inner array ki length = {2,4} */
+//				for(int k=0; k<ar[i].length-j-1; k++) {/* 2-0-1 */
+//					if(ar[i][k]>ar[i][k+1]) {//ar[0][0] > ar[0][1] => ar[1][0] > ar[1][1]
+//						temp = ar[i][k];
+//						ar[i][k] = ar[i][k+1];
+//						ar[i][k+1] = temp;
+//					}
+//				}
+//				
+//			}
+//		}
+//		
+//		for(int i=0; i<=ar.length-1; i++) {
+//			for(int j=0; j<=ar.length-1; j++) {
+//				System.out.print(ar[i][j]+" ");
+//			}
+//			System.out.println();
+//		}
+		
+		
+		/*
+		 * 3D array:-
+		 *
+		 *  int ar[][][] = {{},{},{}};
+		 *  
+		 * */
+		
+		//int ar[][][] = {{{1,2,3}},{{4,5,6}},{{7,8,9}}};
+		//                 ar[0]     ar[1]     ar[2]
+		
+		//int ar[][][] = {{{1,2},{3,4}}, {{5,6},{7,8}}, {{9,1},{3,5}}};
+		//                 ar[0]           ar[1]         ar[2]
+		
+		
+//		for(int i=0; i<=ar.length-1; i++) {//2
+//			for(int j=0; j<=ar[i].length-1; j++) {//2
+//				for(int k=0; k<=ar[j].length-1; k++) {//2
+//					System.out.print(ar[i][j][k]+" ");//ar[0][0][0]
+//				}
+//			}
+//			System.out.println();
+//		}
+		
+		// jagged array...heterogeus row
+		
+		/*
+		 *       1 2 3   r=1
+		 *       1       r=2
+		 *       1 2 3 4 r=3
+		 *       1 2     r=4
+		 * 
+		 * */
+		
+		int ar[][] = new int[4][];
+		ar[0] = new int[3];
+		ar[1] = new int[1];
+		ar[2] = new int[4];
+		ar[3] = new int[2];
+		Scanner sc = new Scanner(System.in);
+		for(int i=0; i<=ar.length-1; i++) {
+			for(int j=0; j<=ar[i].length-1; j++) {
+				ar[i][j] = sc.nextInt();
+			}
+			
+		}
 		
 		for(int i=0; i<=ar.length-1; i++) {
-			for(int j=0; j<=ar.length-1; j++) {
+			for(int j=0; j<=ar[i].length-1; j++) {
 				System.out.print(ar[i][j]+" ");
 			}
 			System.out.println();
 		}
-		
-		//ascending, descending, max, min, secMax, prime, armStrong-number, even-odd
-		//merge two array, add two array
 		
 	}
 
