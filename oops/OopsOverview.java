@@ -219,7 +219,202 @@ public class OopsOverview {
 	 *           }
 	 *           
 	 *           
+	 *           //////////////////////
+	 *           
+	 *           
+	 *           Encapsulation :- Data binding
+	 *           
+	 *           
+	 *           //before encapsulation
+	 *           class A{
+	 *           
+	 *             String pin = "1234";
+	 *             String password = "hr@453#cv";
+	 *           
+	 *           }
+	 *           
+	 *           //after encapsulation
+	 *           class A{
+	 *              private String pin;
+	 *              private String password;
+	 *              
+	 *              void accept(){
+	 *                 pin = "1234";
+	 *                 password = "hr@453#cv";
+	 *              }
+	 *           }
+	 *           
+	 *         //////////////////////////////////////////
+	 *         
 	 *                     
+	 *         Inheritance :- parent class ki properties
+	 *                                 || 
+	 *                                 ||(using extends keyword)
+	 *                                 ||
+	 *                             child class          
+	 *         //parent                    
+	 *         class A{
+	 *           void add(){
+	 *             System.out.println("parent class ki method");
+	 *           }
+	 *         } 
+	 *         
+	 *         //child
+	 *         class B extends A{
+	 *           void sub(){
+	 *             System.out.println("child class ki method");
+	 *           }
+	 *         }
+	 *            
+	 *                             
+	 *         Types of inheritance :- 
+	 *         
+	 *         (1) single level inheritance
+	 *                                       P
+	 *                                       |
+	 *                                       C
+	 *         
+	 *         
+	 *         (2) multilevel inheritance
+	 *         
+	 *                                      P
+	 *                                      |
+	 *                                      C
+	 *                                      |
+	 *                                      SC
+	 *         (3) Hierarchical inheritance 
+	 *         
+	 *                                        P
+	 *                                      /   \
+	 *                                     C1    C2
+	 *                                     |    /   \
+	 *                                    sc1  sc1 sc2
+	 *                                    
+	 *                                    
+	 *        (4) Multiple inheritance.... (interface keyword)
+	 *        
+	 *        interface A{
+	 *            //abstract method
+	 *            void add();
+	 *        }
+	 *        
+	 *        interface B{
+	 *            //abstract method
+	 *            void add();
+	 *        }
+	 *        
+	 *        class C implements A,B{
+	 *             void add{
+	 *                a-b;
+	 *             }
+	 *        }  
+	 *        
+	 *        ============================================
+	 *        
+	 *        Abstraction :- Data Hiding
+	 *        
+	 *        (1)access specifier :- 
+	 *              public :- all / visibility global 
+	 *              private :- class level
+	 *              protected :- same package, different package ki sub class
+	 *              default :- same package 
+	 *              
+	 *        (2)abstract class :- abstract methods / static / default
+	 *        
+	 *         abstract class A{
+	 *            
+	 *            //default method
+	 *            void m1(){
+	 *              
+	 *            }
+	 *            
+	 *            //static method
+	 *            static m2(){
+	 *            
+	 *            }
+	 *            
+	 *            //abstract method
+	 *            abstract void m3();
+	 *            
+	 *         
+	 *         }
+	 *         
+	 *        (3)interface :- pure abstract class
+	 *        //before jdk 1.8
+	 *        interface A{
+	 *           
+	 *           //abstract method
+	 *           void m1();
+	 *           
+	 *        }
+	 *        
+	 *        //after jdk 1.8 
+	 *         
+	 *         interface A{
+	 *             //abstract method
+	 *             void m1();
+	 *             
+	 *             //default method
+	 *             default void m2(){
+	 *             
+	 *             }
+	 *             
+	 *             //static method
+	 *             static void m3(){
+	 *             
+	 *             }
+	 *         
+	 *         }
+	 *         
+	 *        =============================================
+	 *        
+	 *        PolyMorphism :- reusability
+	 *        
+	 *        poly -> many
+	 *        morphism -> form
+	 *        
+	 *        type :- (1)compile time polyMorphism / static / overloading
+	 *                (2)run time polyMorphism / non-static / overriding 
+	 *                
+	 *        overloading :- method name should be same, but parameter should be difference
+	 *        
+	 *        class A {
+	 *                
+	 *                void logic(int a, int b){
+	 *                     a+b;
+	 *                }
+	 *                
+	 *                void logic(int a, float b){
+	 *                     a-b;
+	 *                }
+	 *                
+	 *                void logic(float a, float b){
+	 *                     a*b;
+	 *                }
+	 *                
+	 *                void logic(String name){
+	 *                    System.out.println(name);
+	 *                }                           
+	 *                                         
+	 *        }       
+	 *        
+	 *                            
+	 *        overriding :- method name same but functionality should be different.
+	 *        
+	 *        class A{
+	 *         void logic(){
+	 *             a+b;    
+	 *         }
+	 *       }
+	 *       
+	 *       class B extends A{
+	 *         
+	 *         //override
+	 *         void logic(){
+	 *             a-b;    
+	 *         }
+	 *         
+	 *       }                     
 	 * */
 	
 	
